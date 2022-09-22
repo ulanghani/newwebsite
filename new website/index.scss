@@ -1,0 +1,119 @@
+body{
+	align-items: center;
+width:100%;
+height:100vh ;
+display: grid;
+place-items: center;
+ }
+.image{
+	justify-content: center;
+	width: 10%;
+	height: 40%;
+	align-items: center;
+}
+.nav{
+	text-align: center;
+	background-color:#333333;
+}
+.navbar__menu{
+	margin: 50px;
+	
+	background-color: aqua;
+	align-items: center;
+	justify-content: center;
+}
+	.navbar__menu__links{
+		
+	  color: white;
+	  text-align: center;
+	  padding: 9px 9px;
+	  text-decoration: none;
+	  font-size: 17px;
+}
+
+ .imageslider{
+	width:50%;
+	height:500px;
+	background-image:url("/C:/Users/TP-06/usha/new website/1 image.jpg");
+	background-size: 100% 100%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	animation: changeImage 20s linear infinite;
+ }
+ @keyframes changeImage{
+0%{
+	background-image: url("/C:/Users/TP-06/usha/new website/image2.jpg");
+}
+
+25%{
+	background-image: url("/C:/Users/TP-06/usha/new website/image3.png");
+}
+50%{
+	background-image: url("/C:/Users/TP-06/usha/new website/image4.png");
+}
+75%{
+	background-image: url("/C:/Users/TP-06/usha/new website/image5.jpg");
+}
+
+100%{
+	background-image: url("/C:/Users/TP-06/usha/new website/image6.png");
+}
+
+ }
+ p{
+	visibility:hidden;
+	opacity:0; 
+	font-size: 20px;
+	margin: 20px;
+ }
+ h1{
+margin: 5px;
+font-size: 20px;
+ }
+
+.container{
+	display: flex;
+}
+.img{
+	width: 220px;
+	height: 150px;
+	border-radius: 3px;
+}
+.card{
+	height:250px;
+	margin:50px;
+	box-shadow: 5px 5px 20px black;
+	overflow: hidden;
+
+}
+.intro{
+    height:80px;
+	width: 250px;
+    box-sizing: border-box;
+	position:relative;
+	background: gray;
+	color:antiquewhite;
+	transition:.7s;
+}
+.card:hover{
+	cursor:pointer;
+}
+.card:hover .intro{
+	height: 250px;
+
+	background:gray ;
+}
+.card:hover p{
+	opacity: 1;
+	visibility:visible;
+}
+
+.card:hover img{
+transform: scale(1.1) rotate(-3deg);
+}
+.maindiv{
+	text-align:center;
+	border:1px solid blue;
+	display:inline;
+justify-content: center;
+align-items: center;
+}
